@@ -1,14 +1,16 @@
-// swift-tools-version: 5.4
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "ASN1Swift",
-	platforms: [.macOS(.v10_12),
-				.iOS(.v10),
-				.tvOS(.v10),
-				.watchOS("6.2")],
+	platforms: [.macOS(.v10_13),
+				.iOS(.v12),
+				.tvOS(.v12),
+				.watchOS("6.2"),
+                .visionOS(.v1),
+                ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
